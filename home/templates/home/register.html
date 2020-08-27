@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Register Page</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<div>
+		<form action="{% url 'getRegister' %}" method="post">
+			{% csrf_token %}
+			{{form.as_p}}
+			<p><input type="submit" value="Register"></p>
+		</form>
+	</div>
+</body>
+</html>
